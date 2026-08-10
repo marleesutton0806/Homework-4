@@ -1,20 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap');
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
 body {
     background-color: tan;
     color: brown;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open-Sans', Helvetica, sans-serif;
 }
 p {
-    font-size: 18px;
+    font-size: 24px;
     margin: 16px;
 }
 .name {
     background-color: darkgreen
-    padding 22px;
-    border: 2px solid brown;
+    padding 24px;
+    border: 8px solid brown;
 }
 #main-title {
     color: darkgreen;
     margin: 20px;
     padding: 16px;
     border: 2px solid darkgreen;
+}
+.project-container {
+    display: flex;
+    gap: 16px;
+}
+.project {
+    flex: 1;
+    padding: 24px;
+    border: 8px solid darkgreen;
+}
+@media (max-width: 600px) {
+    .project-container {
+        flex-direction: column;
+    }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+    .project {
+        padding: 16px;
+    }
 }
