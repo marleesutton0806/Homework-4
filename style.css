@@ -1,0 +1,20 @@
+body {
+    background-color: tan;
+    color: brown;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p {
+    font-size: 18px;
+    margin: 16px;
+}
+.name {
+    background-color: darkgreen
+    padding 22px;
+    border: 2px solid brown;
+}
+#main-title {
+    color: darkgreen;
+    margin: 20px;
+    padding: 16px;
+    border: 2px solid darkgreen;
+}
