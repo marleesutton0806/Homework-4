@@ -6,7 +6,7 @@ h1, h2, h3 {
 
 body {
     background-color: tan;
-    color: brown;
+    color:#4b2e1f ;
     font-family: 'Open-Sans', Helvetica, sans-serif;
 }
 p {
@@ -42,4 +42,48 @@ p {
     .project {
         padding: 16px;
     }
+}
+.contact-section {
+    margin: 24px 0;
+    padding: 16px;
+}
+
+fieldset {
+    padding: 16px;
+    border: 2px solid darkgreen;
+}
+
+label {
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+textarea {
+    min-height: 120px;
+}
+
+input:invalid,
+textarea:invalid {
+    border: 2px solid darkred;
+}
+
+input:focus,
+textarea:focus {
+    outline: 3px solid darkgreen;
+}
+
+button {
+    margin-top: 16px;
+    padding: 8px 16px;
+    background-color: darkgreen;
+    color: white;
 }
