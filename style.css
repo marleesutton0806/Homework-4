@@ -93,3 +93,18 @@ button {
 footer p {
     font-size: 16px;
 }
+.error-message {
+    color: darkred;
+    font-size: 16px;
+    margin: 4px 0 8px;
+}
+
+input[aria-invalid="true"],
+textarea[aria-invalid="true"] {
+    border: 2px solid darkred;
+}
+
+#form-status {
+    color: darkgreen;
+    font-weight: bold;
+}

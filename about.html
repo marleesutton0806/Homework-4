@@ -29,7 +29,18 @@
 <p>
 I am studying Information Technology and eventually would like to advance into Cybersecurity. .
 </p>
+<button
+    type="button"
+    id="bio-button"
+    aria-expanded="false"
+    aria-controls="extra-bio">
+    Show More
+</button>
 
+<p id="extra-bio" hidden>
+    I am especially interested in cybersecurity because I enjoy learning
+    how technology can be protected from digital threats.
+    </p>
 </section>
 
 <section>
@@ -42,20 +53,24 @@ I am studying Information Technology and eventually would like to advance into C
 <section class="contact-section">
     <h2>Contact Me</h2>
 
-    <form>
-        <fieldset>
+    <form id="contact-form" novalidate>
+        
             <legend>Contact Information</legend>
 
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+           <input type="text" id="name" name="name" required aria-describedby="name-error">
+<p class="error-message" id="name-error" aria-live="polite"></p>
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" required aria-describedby="email-error">
+<p class="error-message" id="email-error" aria-live="polite"></p>
 
             <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
+            <textarea id="message" name="message" required aria-describedby="message-error"></textarea>
+<p class="error-message" id="message-error" aria-live="polite"></p>
 
             <button type="submit">Send Message</button>
+            <p id="form-status" aria-live="polite"></p>
         </fieldset>
     </form>
 </section>
@@ -67,5 +82,6 @@ I am studying Information Technology and eventually would like to advance into C
 
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
